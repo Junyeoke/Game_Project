@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import designesis from "../../assets/js/designesia";
 
 function About() {
+  
   useEffect(() => {
     designesis();
+    
+    
   }, []);
 
   return (
@@ -11,7 +14,7 @@ function About() {
       <div className="no-bottom no-top" id="content">
         <div id="top"></div>
 
-        <section id="subheader" className="jarallax">
+        <section id="subheader" className="jarallax" >
           <img
             src={require("../../assets/images/background/subheader-about.webp")}
             className="jarallax-img"
@@ -122,7 +125,7 @@ function About() {
             </div>
           </div>
         </section>
-        
+
         <section id="section-testimonial">
           <div className="container">
             <div className="row">
@@ -145,7 +148,7 @@ function About() {
                   <div className="de_testi type-2">
                     <blockquote>
                       <div className="de-rating-ext">
-                      <h4>🎮 스팀 API를 사용한 전체 게임조회</h4>
+                        <h4>🎮 스팀 API를 사용한 전체 게임조회</h4>
                       </div>
                       <p>
                         1️⃣&nbsp;API로 받아온 게임 정보를 전체 게임 컬렉션에 저장
@@ -157,9 +160,8 @@ function About() {
                       <img
                         alt=""
                         src={require("../../assets/images/all.png")}
-                        style={{ width: "300px", height: "200px"}}
+                        style={{ width: "300px", height: "200px" }}
                         className="container"
-                        
                       />{" "}
                     </blockquote>
                   </div>
@@ -168,7 +170,7 @@ function About() {
                   <div className="de_testi type-2">
                     <blockquote>
                       <div className="de-rating-ext">
-                      <h4>📝 게임 리뷰 기능</h4>
+                        <h4>📝 게임 리뷰 기능</h4>
                       </div>
                       <p>
                         1️⃣&nbsp;상세 조회 페이지에서 상품에 대한 리뷰 작성 기능
@@ -189,8 +191,8 @@ function About() {
                 <div className="item">
                   <div className="de_testi type-2">
                     <blockquote>
-                    <div className="de-rating-ext">
-                      <h4>🎤 뉴스 기능</h4>
+                      <div className="de-rating-ext">
+                        <h4>🎤 뉴스 기능</h4>
                       </div>
                       <p>
                         1️⃣&nbsp;이미지 업로드를 이용한 뉴스 게시판 기능
@@ -211,8 +213,8 @@ function About() {
                 <div className="item">
                   <div className="de_testi type-2">
                     <blockquote>
-                    <div className="de-rating-ext">
-                      <h4>📞 1:1 문의 기능</h4>
+                      <div className="de-rating-ext">
+                        <h4>📞 1:1 문의 기능</h4>
                       </div>
                       <p>
                         1️⃣&nbsp;답변 대기/완료를 구분하여 하나씩 답변이 가능
@@ -234,8 +236,8 @@ function About() {
                 <div className="item">
                   <div className="de_testi type-2">
                     <blockquote>
-                    <div className="de-rating-ext">
-                      <h4>🔐 로그인/회원가입</h4>
+                      <div className="de-rating-ext">
+                        <h4>🔐 로그인/회원가입</h4>
                       </div>
                       <p>
                         1️⃣&nbsp;이메일과 이름 비밀번호를 입력하여 회원가입
@@ -256,8 +258,8 @@ function About() {
                 <div className="item">
                   <div className="de_testi type-2">
                     <blockquote>
-                    <div className="de-rating-ext">
-                      <h4>🔐 비밀번호 찾기</h4>
+                      <div className="de-rating-ext">
+                        <h4>🔐 비밀번호 찾기</h4>
                       </div>
                       <p>
                         1️⃣&nbsp;회원가입한 비밀번호 찾기 위한 기능
@@ -278,8 +280,8 @@ function About() {
                 <div className="item">
                   <div className="de_testi type-2">
                     <blockquote>
-                    <div className="de-rating-ext">
-                      <h4>🙍‍♂️ 마이페이지</h4>
+                      <div className="de-rating-ext">
+                        <h4>🙍‍♂️ 마이페이지</h4>
                       </div>
                       <p>
                         1️⃣&nbsp;유저의 정보를 확인, 수정 기능
@@ -300,8 +302,8 @@ function About() {
                 <div className="item">
                   <div className="de_testi type-2">
                     <blockquote>
-                    <div className="de-rating-ext">
-                      <h4>💰 장바구니/결제/환불</h4>
+                      <div className="de-rating-ext">
+                        <h4>💰 장바구니/결제/환불</h4>
                       </div>
                       <p>
                         1️⃣&nbsp;토스API를 활용한 결제구현
@@ -355,6 +357,7 @@ function About() {
                     data-bs-html="true"
                     data-bs-content="1️⃣ 기초 데이터베이스 설계<br>2️⃣ 로그인·회원가입 기능 담당<br>3️⃣ 포인트 기능 담당<br>4️⃣ 프로젝트 총괄"
                     data-bs-target="#popover1" // 고유한 ID 부여
+                    data-bs-trigger="hover" // Trigger on hover
                   >
                     담당 역할 보기
                   </button>
@@ -384,6 +387,7 @@ function About() {
                     data-bs-html="true"
                     data-bs-content="1️⃣ 제안서 작성<br>2️⃣ 장바구니 기능 Front 담당<br>3️⃣ About 페이지 Front 담당"
                     data-bs-target="#popover2" // 고유한 ID 부여
+                    data-bs-trigger="hover" // Trigger on hover
                   >
                     담당 역할 보기
                   </button>
@@ -413,6 +417,7 @@ function About() {
                     data-bs-container="body" // 팝오버가 body 요소 안에 위치하도록 설정
                     data-bs-content=" 1️⃣ 결제 부분 담당<br>2️⃣ News 페이지 담당<br>3️⃣ About 페이지 담당<br>4️⃣ 장바구니 기능 부분 담당"
                     data-bs-target="#popover3" // 고유한 ID 부여
+                    data-bs-trigger="hover" // Trigger on hover
                   >
                     담당 역할 보기
                   </button>
@@ -428,7 +433,7 @@ function About() {
                     </div>
                     <div className="fpw-overlay-btm"></div>
                     <img
-                      src={require("../../assets/images/team/4.webp")}
+                       src={require("../../assets/images/team/박준희.jpg")}
                       className="fp-image img-fluid"
                       alt=""
                     />
@@ -443,6 +448,7 @@ function About() {
                     data-bs-container="body" // 팝오버가 body 요소 안에 위치하도록 설정
                     data-bs-content=" 1️⃣ 상세조회 부분 담당<br>2️⃣ 리뷰 부분 담당"
                     data-bs-target="#popover4" // 고유한 ID 부여
+                    data-bs-trigger="hover" // Trigger on hover
                   >
                     담당 역할 보기
                   </button>
@@ -472,6 +478,7 @@ function About() {
                     data-bs-container="body" // 팝오버가 body 요소 안에 위치하도록 설정
                     data-bs-content=" 1️⃣ 전체조회 페이지 구현 담당<br>2️⃣ 메인 페이지 담당"
                     data-bs-target="#popover5" // 고유한 ID 부여
+                    data-bs-trigger="hover" // Trigger on hover
                   >
                     담당 역할 보기
                   </button>
@@ -501,6 +508,7 @@ function About() {
                     data-bs-container="body" // 팝오버가 body 요소 안에 위치하도록 설정
                     data-bs-content=" 1️⃣ 상세조회 부분 담당<br>2️⃣ 리뷰 부분 담당"
                     data-bs-target="#popover6" // 고유한 ID 부여
+                    data-bs-trigger="hover" // Trigger on hover
                   >
                     담당 역할 보기
                   </button>
@@ -509,8 +517,6 @@ function About() {
             </div>
           </div>
         </section>
-
-
       </div>
     </>
   );

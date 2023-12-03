@@ -76,20 +76,13 @@ function Header() {
                     {/* 첫번째 메뉴 home/ homepage one ~ five */}
                     <li>
                       <Link className="menu-item" to="/">
-                        Home
+                        홈
                       </Link>
-                      <ul>
-                        <li>
-                          <Link className="menu-item" to="/">
-                            Homepage One
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
                     {/* GameServers */}
                     <li>
                       <Link className="menu-item" to="/games">
-                        Game
+                        게임
                       </Link>
                       <ul>
                         <li>
@@ -134,31 +127,17 @@ function Header() {
                         </li>
                       </ul>
                     </li>
-                    {/* Location */}
-                    <li>
-                      <Link className="menu-item" to="/location">
-                        Location
-                      </Link>
-                    </li>
+                   
                     {/* Support */}
                     <li>
                       <Link className="menu-item" to="#">
-                        Support
+                        지원
                       </Link>
                       <ul>
-                        <li>
-                          <Link className="menu-item" to="/knowledgebase">
-                            Knowledgebase
-                          </Link>
-                        </li>
-                        <li>
-                          <Link className="menu-item" to="/faq">
-                            FAQ
-                          </Link>
-                        </li>
+                       
                         <li>
                           <Link className="menu-item" to="/contact">
-                            Contact
+                            1:1문의하기
                           </Link>
                         </li>
                       </ul>
@@ -166,26 +145,15 @@ function Header() {
                     {/* news */}
                     <li>
                       <Link className="menu-item" to="/news">
-                        News
+                        뉴스
                       </Link>
                     </li>
                     {/* Company */}
                     <li>
-                      <Link className="menu-item" to="#">
-                        Company
+                      <Link className="menu-item" to="/about">
+                        소개
                       </Link>
-                      <ul>
-                        <li>
-                          <Link className="menu-item" to="/about">
-                            About Us
-                          </Link>
-                        </li>
-                        <li>
-                          <Link className="menu-item" to="/affliate">
-                            Affliates
-                          </Link>
-                        </li>
-                      </ul>
+                      
                     </li>
                     {/* More Pages */}
                     <li>
@@ -199,7 +167,7 @@ function Header() {
                           <>
                             <li>
                               <a className="menu-item" onClick={handleLogOut}>
-                                Logout
+                                로그아웃
                               </a>
                             </li>
                             {user?.role === "ROLE_ADMIN" && (
@@ -210,7 +178,7 @@ function Header() {
                                     className="menu-item"
                                     href="/control-panel"
                                   >
-                                    Admin ControlPanel
+                                    관리자 페이지
                                   </a>
                                 </li>
                                 <li>
@@ -218,7 +186,7 @@ function Header() {
                                     className="menu-item"
                                     to="/control-panel-modify"
                                   >
-                                    Admin ControlPanel Modify
+                                    관리자 페이지 수정
                                   </Link>
                                 </li>
                                 <li>
@@ -226,7 +194,7 @@ function Header() {
                                     className="menu-item"
                                     to="/control-panel-refund"
                                   >
-                                    Admin ControlPanel Refund
+                                    관리자 환불페이지
                                   </Link>
                                 </li>
                                 <li>
@@ -234,7 +202,7 @@ function Header() {
                                     className="menu-item"
                                     to="/control-panel-qna"
                                   >
-                                    Admin ControlPanel Qna
+                                    관리자 QNA 페이지
                                   </Link>
                                 </li>
                                 <li>
@@ -242,7 +210,7 @@ function Header() {
                                     className="menu-item"
                                     to="/admin-library"
                                   >
-                                    Admin Library
+                                    관리자 라이브러리
                                   </Link>
                                 </li>
                               </>
@@ -255,7 +223,7 @@ function Header() {
                                     className="menu-item"
                                     to="/user-library"
                                   >
-                                    User Library
+                                    라이브러리
                                   </Link>
                                 </li>
                                 <li>
@@ -267,7 +235,7 @@ function Header() {
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link to="/cart" className="btn-line">
+                                  <Link to="/cart" className="menu-item">
                                     장바구니
                                   </Link>
                                 </li>
@@ -279,12 +247,12 @@ function Header() {
                             {" "}
                             <li>
                               <Link className="menu-item" to="/login">
-                                Login
+                                로그인
                               </Link>
                             </li>
                             <li>
                               <Link className="menu-item" to="/register">
-                                Register
+                                회원가입
                               </Link>
                             </li>
                           </>
