@@ -1,2 +1,4 @@
 README.md
-*.properties
+frontend-typescript/.env.production
+frontend-typescript/.env.development
+playhostProject/src/main/resources/*.properties
